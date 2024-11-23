@@ -16,7 +16,7 @@ body {
 
 #layout {
     width: 725px;
-    height: 775px;
+    min-height: 775px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
     position: relative;
@@ -49,6 +49,11 @@ label {
     flex-direction: column;
 }
 
+input:hover {
+    cursor: pointer;
+    border: 2px solid hsl(168, 29%, 53%) !important;
+}
+
 #first-name, #last-name {
     width: 19.5rem;
     height: 3.25rem;
@@ -65,8 +70,12 @@ label {
 }
 
 .error {
+    color: hsl(0, 66%, 54%);
+    font-weight: 600;
+    margin: .75rem 0 .25rem 0;
     display: none;
 }
+
 
 #email-input-div {
     margin: 1.75rem 0 0 2.5rem;
@@ -80,6 +89,9 @@ label {
 }
 
 .invalid {
+    color: hsl(0, 66%, 54%);
+    font-weight: 600;
+    margin: .75rem 0 .25rem 0;
     display: none;
 }
 
@@ -108,6 +120,11 @@ label {
     border: 1px solid hsl(169, 82%, 27%);
     display: flex;
     align-items: center;
+}
+
+.radio-div:hover {
+    cursor: pointer;
+    border: 2px solid hsl(168, 29%, 53%);
 }
 
 .radio-button {
@@ -150,7 +167,12 @@ label {
 
 #consent-check-div {
     display: flex;
+    flex-direction: column;
     margin: 2.5rem 0 0 2.5rem;
+}
+
+.consent-content {
+    display: flex;
 }
 
 #consent-p {
@@ -163,6 +185,11 @@ label {
     width: 1.1rem;
     height: 1.1rem;
     border: 2px solid hsla(186, 15%, 59%, 0.849);
+    
+}
+
+#consent:hover, #checked:hover {
+    cursor: pointer;
 }
 
 #checked {
@@ -184,7 +211,12 @@ label {
     border: none;
     border-radius: 10px;
     align-items: center;
-    margin: 2.75rem auto 2rem auto;
+    margin: 2.75rem auto 2.5rem auto;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    background-color: hsl(169, 24%, 22%);
 }
 
 /* -----------------------------------Success Message------------------------------ */
