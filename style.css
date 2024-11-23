@@ -49,7 +49,23 @@ label {
     flex-direction: column;
 }
 
-input:hover {
+input {
+    font-size: 18px;
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    color: hsl(169, 82%, 27%);
+    padding-left: 1.5rem;
+}
+
+textarea {
+    font-size: 18px;
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    color: hsl(169, 82%, 27%);
+    padding: 1rem 1.5rem;
+}
+
+input:hover, textarea:hover {
     cursor: pointer;
     border: 2px solid hsl(168, 29%, 53%) !important;
 }
@@ -251,4 +267,110 @@ input:hover {
 
 #thanks {
     margin-left: 1.75rem;
+}
+
+/* ----------------------------------------Mobile------------------------------------------------- */
+@media(max-width: 375px) {
+
+    
+    #layout {
+        width: 345px;
+        min-height: 1075px;
+    }
+    
+    h1 {
+        margin: 1.5rem 0 2rem 1.5rem;
+    }
+
+    #name-div {
+        flex-direction: column;
+    }
+    
+    #first-input-div {
+        margin: 0 0 0 1.5rem;
+    }
+
+    #last-input-div {
+        margin: 1.75rem 0 0 1.5rem;
+    }
+
+    #first-name, #last-name, #inquiry-div, #support-div, #message-div {
+        width: 18.5rem;
+    }
+    
+    .error {
+        display: none;
+    }
+    
+    
+    #email-input-div {
+        margin: 1.75rem 0 0 1.5rem;
+    }
+    
+    #email {
+        width: 18.5rem;
+    }
+    
+    .invalid {
+        display: none;
+    }
+    
+    #query-div {
+        margin: 1.75rem 0 0 1.5rem;
+    }
+    
+    #radio-divs {
+        flex-direction: column;
+    }
+    
+
+    
+    #inquiry-div {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    
+    #message-input-div {
+        margin: 1.75rem 0 0 1.5rem;
+    }
+    
+    #message {
+        width: 18.5rem;
+        height: 15rem;
+    }
+    
+    #consent-check-div {
+        margin: 2.5rem 0 0 1.5rem;
+    }
+    
+    
+    #consent-p {
+        width: 15rem;
+        line-height: 1.5rem;
+    }
+    
+    #consent {
+        margin-top: .75rem;
+    }
+
+    #checked {
+        display: none;
+        margin-top: .75rem;
+    }
+    
+    #submit-button {
+        width: 18.5rem;
+        margin: 2.75rem auto 1.5rem auto;
+    }
+    
+    
+    /* -----------------------------------Success Message------------------------------ */
+    
+    
+    #success {
+        top:initial;
+        bottom: -7rem;
+        display: none;
+    }
 }
