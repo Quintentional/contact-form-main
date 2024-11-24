@@ -40,7 +40,7 @@ label {
     margin-left: .5rem;
 }
 
-#name-div {
+#name-divs {
     display: flex;
 }
 
@@ -156,8 +156,14 @@ input:hover, textarea:hover {
 
 .radio-button-selected {
     margin: 0 1rem 0 1.5rem;
+    position: absolute;
     display: none;
 }
+
+.active {
+    display: flex;
+}
+
 
 .query-p {
     color: hsl(169, 82%, 27%);
@@ -187,6 +193,10 @@ input:hover, textarea:hover {
     margin: 2.5rem 0 0 2.5rem;
 }
 
+#consent-check-div:hover {
+    cursor: pointer;
+}
+
 .consent-content {
     display: flex;
 }
@@ -201,16 +211,20 @@ input:hover, textarea:hover {
     width: 1.1rem;
     height: 1.1rem;
     border: 2px solid hsla(186, 15%, 59%, 0.849);
-    
+    display: block;
 }
 
-#consent:hover, #checked:hover {
-    cursor: pointer;
-}
+
 
 #checked {
+    position: absolute;
     display: none;
 }
+
+#checked.active {
+    display: block;
+}
+
 
 #submit-button-flex {
     display: flex;
@@ -282,7 +296,7 @@ input:hover, textarea:hover {
         margin: 1.5rem 0 2rem 1.5rem;
     }
 
-    #name-div {
+    #name-divs {
         flex-direction: column;
     }
     
@@ -358,6 +372,8 @@ input:hover, textarea:hover {
         display: none;
         margin-top: .75rem;
     }
+
+
     
     #submit-button {
         width: 18.5rem;
